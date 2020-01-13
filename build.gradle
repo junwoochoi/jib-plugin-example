@@ -39,4 +39,5 @@ jib{
     to {
         image = "localhost:5000/${rootProject.name}"
     }
+    allowInsecureRegistries true
 }

@@ -28,7 +28,7 @@ class HelloControllerTest {
     @DisplayName("/hello 로 GET요청시 { hello : world } 리턴 한다")
     void testHello() throws Exception {
         //when
-        final ResultActions perform = mockMvc.perform(get("/api"))
+        final ResultActions perform = mockMvc.perform(get("/hello"))
                 .andDo(print());
 
         //then

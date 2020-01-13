@@ -31,3 +31,12 @@ dependencies {
 test {
     useJUnitPlatform()
 }
+
+jib{
+    from {
+        image = 'openjdk:alpine'
+    }
+    to {
+        image = "localhost:5000/${rootProject.name}"
+    }
+}
